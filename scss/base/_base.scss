@@ -1,0 +1,66 @@
+/*font-family: 'Lato', sans-serif;
+font-weight's: 300, 400, 900*/
+
+/* ========================================
+  Box Sizing
+======================================== */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+ }
+
+* {
+    font-family: $stack-lato;
+    color: $color-text-dark;
+}
+
+body {
+    background-color: $color-prim;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-light;
+}
+
+a:hover {
+    color: $color-text-hover;
+}
+
+/* Page Title */
+
+h1 {
+    @include text(1.8em, $weight: 900, $color: $color-text-light);
+    margin: 0;
+}
+
+/* Section Headers */
+
+h2 {
+    @include text(1.2em, $weight: 900);
+}
+
+/* Portfolio, Phone, Email */
+
+h3 {
+    @include text(1.3em, $weight: 400);
+}
+
+p {
+    @include text(1.2em, 1.5em, 300);
+}

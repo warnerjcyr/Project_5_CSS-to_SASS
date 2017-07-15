@@ -1,0 +1,103 @@
+/* Header, About, Img */
+
+header {
+    @extend %centered;
+    background-color: $color-prim;
+    padding: 30px 0;
+}
+
+.top-section {
+    
+    @media screen and #{$brk-wide} {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.top-name {
+    padding-bottom: 10px;
+    
+    @media screen and #{$brk-wide} {
+        margin-right: auto;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.main {
+    
+    &-nav {
+        @include text(1.2em, $weight: 700);
+        padding: 20px 0;
+    }
+
+    &-nav li {
+        background-color: $color-nav;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        
+        @media screen and #{$brk-narrow} {
+            font-size: .85em;
+            background-color: $color-prim;
+            display: inline-block;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        @media screen and #{$brk-wide} {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    &-nav li a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.about {
+    max-width: 90%;
+    margin: 0 auto;
+    
+    @media screen and #{$brk-narrow} {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.about p {
+    @include text(1.2em, 1.5em, 300, $color-text-light);
+    padding: 0 10px;
+    
+    @media screen and #{$brk-narrow} {
+        max-width: 50%;
+        margin-right: auto;
+        font-size: 1.4em;
+        text-align: left;
+    }
+    
+    @media screen and #{$brk-wide} {
+        padding: 0;
+    }
+}
+
+.about img {
+    max-width: 70%;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: $color-img-border;
+    border-width:thick;
+    
+    @media screen and #{$brk-narrow} {
+        max-width: 50%;
+        margin-left: auto;
+    }
+    
+    @media screen and #{$brk-wide} {
+        padding: 0;
+    }
+}

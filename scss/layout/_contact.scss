@@ -1,0 +1,47 @@
+.contact-bkg {
+    background-color: $color-contact;
+}
+
+#contact {
+    @extend %centered;
+    padding: 60px 0;
+    border-bottom: 1px solid $color-prim;
+    border-bottom-width: thin;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#contact {
+
+    & ul {
+        margin-top: 30px;
+    }
+
+    & li {
+        margin-bottom: 15px;
+    }
+}
+
+#contact {
+    
+    & h3 {
+        @include text(1.2em, $weight: 400, $color: $color-text-dark);
+        display: inline;
+    }
+    
+    & p {
+        @include text(1.2em, 1.5em, 300);
+        max-width: 90%;
+        margin: 0 auto;
+    }
+ }
+
+#contact a {
+    padding-left: 10px;
+    font-weight: 600;
+    color: $color-text-dark;
+}
+
+#contact a:hover {
+    color: $color-text-hover;
+}

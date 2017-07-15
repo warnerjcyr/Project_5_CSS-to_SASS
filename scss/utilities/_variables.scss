@@ -1,0 +1,37 @@
+// Discriptive color variables
+
+$black      : #000;
+$white      : #fff;
+$mirage     : #1a2930;
+$mirage-dk  : #151819;
+$gray       : #8a8a8a;
+$yellow     : #f7ce3e;
+$lt-blue    : #66c5da;
+$apricot    : #ed9286;
+$purple     : #9992c8;
+
+// Functional color variables
+
+$color-prim         : $mirage;
+$color-sec          : $white;
+$color-contact      : $yellow;
+$color-nav          : $mirage-dk;
+
+$color-skill-one    : $lt-blue;
+$color-skill-two    : $apricot;
+$color-skill-three  : $purple;
+
+$color-img-border   : $gray;
+
+$color-text-light   : $white;
+$color-text-dark    : $black;
+$color-text-hover   : $gray;
+
+// Font stack
+
+$stack-lato         : 'Lato', sans-serif;
+
+// Media query breakpoints
+
+$brk-narrow : '(min-width: 768px)';
+$brk-wide   : '(min-width: 1024px)';
